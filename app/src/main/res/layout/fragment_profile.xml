@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#2196F3">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:orientation="horizontal"
+        android:layout_marginTop="125dp"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_person_24"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/logo"/>
+
+    <LinearLayout
+        android:id="@+id/ll_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:alpha="0.9"
+        android:layout_below="@id/tv_username"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="36dp"
+        android:padding="18dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_weight="3"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_weight="3"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="36dp"
+        android:padding="12dp"
+        android:layout_below="@id/ll_preview">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:alpha="0.9"
+            android:elevation="8dp"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:text="Logout"
+            android:alpha="0.9"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
